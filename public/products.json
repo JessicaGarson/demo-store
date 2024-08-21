@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "name": "Coffee Mug",
+      "price": 15.00,
+      "description": "A coffee mug!",
+      "image": "/images/coffee-mug.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Set of Pens",
+      "price": 10.00,
+      "description": "Pens in assorted colors.",
+      "image": "/images/pens.jpg"
+    }
+]
