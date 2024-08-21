@@ -12,5 +12,12 @@
       "price": 10.00,
       "description": "Pens in assorted colors.",
       "image": "/images/pens.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Plush Elk",
+      "price": 16.00,
+      "description": "Elastic Elk!",
+      "image": "/images/elk.jpg"
     }
 ]
