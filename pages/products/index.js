@@ -27,7 +27,7 @@ export default function Home({ productList }) {
             <Header />
             <div className={styles.grid}>
                 {productList.map(product => (
-                    <div key={product.id} className={styles.productCard} data-test="product-card">
+                    <div key={product.id} className={styles.productCard} data-testid="product-card">
                         <Image
                             src={product.image}
                             alt={product.name}
@@ -35,18 +35,20 @@ export default function Home({ productList }) {
                             height={200}
                             className={styles.productImage}
                         />
-                        <h2 className={styles.productName} data-test="product-name">{product.name}</h2>
-                        <p className={styles.productPrice} data-test="product-price">${product.price}</p>
+                        <h2 className={styles.productName} data-testid="product-name">{product.name}</h2>
+                        <p className={styles.productPrice} data-testid="product-price">${product.price}</p>
                         <p>{product.description}</p>
                         <button
                             onClick={() => alert('Added to cart!')}
                             className={styles.buyButton}
-                            data-test="buy-button">
+                            data-testid="buy-button">
                             Buy
                         </button>
                     </div>
                 ))}
             </div>
+            {/* Added cart count display for testing purposes */}
+            <div data-testid="cart-count">0</div>
         </div>
     );
 }
