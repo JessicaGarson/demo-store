@@ -47,8 +47,6 @@ export default function Home({ productList }) {
                     </div>
                 ))}
             </div>
-            {/* Added cart count display for testing purposes */}
-            <div data-testid="cart-count">0</div>
         </div>
     );
 }
@@ -70,3 +68,4 @@ export async function getStaticProps() {
     };
   }
 }
+
